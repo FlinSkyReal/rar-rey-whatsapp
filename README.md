@@ -2,7 +2,7 @@
 <img src="https://i.pinimg.com/474x/9e/37/f0/9e37f0dbf23c2862e73c1ea3531edca9.jpg?s=400&u=1ceaf43bd7e0fdb53563faf97ca77e275936168d&v=4" width="128" height="128"/>
 </p>
 <p align="center">
-<a href="#"><img title="RAR X REY" src="https://img.shields.io/badge/Rar X Rey-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<a href="#"><img title="RIFKHA BOT" src="https://img.shields.io/badge/Rar X Rey-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
 <a href="https://github.com/FlinSky"><img title="Author" src="https://img.shields.io/badge/Author-RAR X REY-black.svg?style=for-the-badge&logo=github"></a>
