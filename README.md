@@ -1,1 +1,0 @@
-# rar-rey-whatsapp
