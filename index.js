@@ -4,7 +4,7 @@ const msgHandler = require('./msgHndlr')
 const options = require('./options')
 
 const start = async (client = new Client()) => {
-        console.log('[SERVER] Server Started!')
+        console.log('[REYXRAR BOT] siap digunakan!')
         // Force it to keep the current session
         client.onStateChanged((state) => {
             console.log('[Client State]', state)
@@ -28,10 +28,10 @@ const start = async (client = new Client()) => {
         
         client.onAddedToGroup(((chat) => {
             let totalMem = chat.groupMetadata.participants.length
-            if (totalMem < 30) { 
-            	client.sendText(chat.id, `Cih member nya cuma ${totalMem}, Kalo mau invite bot, minimal jumlah mem ada 30`).then(() => client.leaveGroup(chat.id)).then(() => client.deleteChat(chat.id))
+            if (totalMem < 256) { 
+            	client.sendText(chat.id, `donasi 5k kalau mau masukin bot oke`).then(() => client.leaveGroup(chat.id)).then(() => client.deleteChat(chat.id))
             } else {
-                client.sendText(chat.groupMetadata.id, `Halo warga grup *${chat.contact.name}* terimakasih sudah menginvite bot ini, untuk melihat menu silahkan kirim *!help*`)
+                client.sendText(chat.groupMetadata.id, `Halo warga grup *${chat.contact.name}* hai bor thanks udah invite bot ini untuk melihat menu kirim *!help*`)
             }
         }))
 
