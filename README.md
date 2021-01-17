@@ -98,6 +98,7 @@
 
 
 ## Special Thanks to
+* [`Tn RAR`](https://github.com/RAR-HELIX)
 * [`MhankBarBar`](https://github.com/MhankBarBar/whatsapp-bot)
 * [`Arugaz`](https://github.com/ArugaZ/whatsapp-bot)
 * [`TobyG74`](https://github.com/TobyG74/ElainaBOT)
