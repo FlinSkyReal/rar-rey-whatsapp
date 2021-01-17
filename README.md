@@ -17,12 +17,12 @@
 ## install project
 
 ```bash
-> git clone https://github.com/FlinSkyReal/whatsApp-bot
-> cd whatsApp-bot
+> git clone https://github.com/FlinSkyReal/rar-rey-whatsapp
+> cd rar-rey-whatsapp
 ```
 
 ## join grup WhatsApp
-*['Group WhatsApp'](https://chat.whatsapp.com/Isndxoe2HtJLe1kXR0b2Jh)
+*[Group WhatsApp](https://chat.whatsapp.com/Isndxoe2HtJLe1kXR0b2Jh)
 
 ```bash
 > npm install gify-cli -g
