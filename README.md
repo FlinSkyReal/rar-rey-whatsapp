@@ -18,6 +18,7 @@
 ## install project
 
 ```bash
+> sebelum jalanin bot ubah no owner terlebih dahulu [`recode`](https://github.com/FlinSkyReal/rar-rey-whatsapp/blob/main/msgHndlr.js#L67)
 > git clone https://github.com/FlinSkyReal/rar-rey-whatsapp
 > cd rar-rey-whatsapp
 ```
