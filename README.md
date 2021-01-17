@@ -16,7 +16,7 @@
 </p>
 
 ## ubah no Owner
-['klik`](https://github.com/FlinSkyReal/rar-rey-whatsapp/blob/main/msgHndlr.js#L67)
+[`setting`](https://github.com/FlinSkyReal/rar-rey-whatsapp/blob/main/msgHndlr.js#L67)
 
 ## install project
 
