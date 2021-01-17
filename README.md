@@ -21,8 +21,11 @@
 > cd rar-rey-whatsapp
 ```
 
+## REST API RAR
+[`RAR API`](https://vlaxrar.herokuapp.com/)
+
 ## join grup WhatsApp
-[Group WhatsApp](https://chat.whatsapp.com/Isndxoe2HtJLe1kXR0b2Jh)
+[`Group WhatsApp`](https://chat.whatsapp.com/Isndxoe2HtJLe1kXR0b2Jh)
 
 ```bash
 > npm install gify-cli -g
