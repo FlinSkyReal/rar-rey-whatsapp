@@ -22,7 +22,7 @@
 ```
 
 ## join grup WhatsApp
-*[Group WhatsApp](https://chat.whatsapp.com/Isndxoe2HtJLe1kXR0b2Jh)
+[Group WhatsApp](https://chat.whatsapp.com/Isndxoe2HtJLe1kXR0b2Jh)
 
 ```bash
 > npm install gify-cli -g
@@ -98,10 +98,10 @@
 
 
 ## Special Thanks to
-* ['MhankBarBar'](https://github.com/MhankBarBar/whatsapp-bot)
-* [`Arugaz'](https://github.com/ArugaZ/whatsapp-bot)
-* ['TobyG74'](https://github.com/TobyG74/ElainaBOT)
-* ['Lucya Bot'](https://github.com/bdrsmsdn/lucya-bot)
+* [`MhankBarBar`](https://github.com/MhankBarBar/whatsapp-bot)
+* [`Arugaz`](https://github.com/ArugaZ/whatsapp-bot)
+* [`TobyG74`](https://github.com/TobyG74/ElainaBOT)
+* [`Lucya Bot`](https://github.com/bdrsmsdn/lucya-bot)
 * [`ibnusyawall/aex-bot`](https://github.com/ibnusyawall/aex-bot)
 
 ### Donate
