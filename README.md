@@ -10,6 +10,7 @@
 <p align="center">
 <a href="https://github.com/FlinSkyReal/followers"><img title="Followers" src="https://img.shields.io/github/followers/FlinSkyReal?color=blue&style=flat-square"></a>
 <a href="https://github.com/FlinSkyReal/rar-rey-whatsapp/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/FlinSkyReal/rar-rey-whatsapp?color=red&style=flat-square"></a>
+<a href="https://github.com/FlinSkyReal/rar-rey-whatsapp/network/members"><img title="Forks" src="https://img.shields.io/github/forks/FlinSkyReal/rar-rey-whatsapp?color=red&style=flat-square"></a>
 <a href="https://github.com/FlinSkyReal/rar-rey-whatsapp/network/members"><img"></a>
 <a href="https://github.com/FlinSkyReal/rar-rey-whatsapp/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/FlinSkyReal/rar-rey-whatsapp?color=red&style=flat-square"></a>
 <a href="https://github.com/FlinSkyReal/rar-rey-whatsapp/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/FlinSkyReal/rar-rey-whatsapp?label=Watchers&color=blue&style=flat-square"></a>
