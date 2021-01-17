@@ -1178,7 +1178,7 @@ module.exports = msgHandler = async (client, message) => {
             client.reply(from, readme, id)
             break
         case '!info':
-            client.sendLinkWithAutoPreview(from, 'https://github.com/FlinSkyReal/rar-whatsapp', info)
+            client.sendLinkWithAutoPreview(from, 'https://github.com/FlinSkyReal/rar-rey-whatsapp', info)
             break
         case '!snk':
             client.reply(from, snk, id)
