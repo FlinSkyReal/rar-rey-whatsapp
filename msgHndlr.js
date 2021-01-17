@@ -1,7 +1,11 @@
 /*
-* "Wahai orang-orang yang beriman, mengapakah kamu mengatakan sesuatu yang tidak kamu kerjakan?
-* Amat besar kebencian di sisi Allah bahwa kamu mengatakan apa-apa yang tidak kamu kerjakan."
-* (QS ash-Shaff: 2-3).
+* Thanks To 
+* Allah SWT.
+* Rifqi Atha ramadhan
+* ArugaZ
+* MHANKBARBAR
+* IBNUSYAWAL.
+* Dll
 */
 const { decryptMedia } = require('@open-wa/wa-decrypt')
 const fs = require('fs-extra')
@@ -106,7 +110,7 @@ module.exports = msgHandler = async (client, message) => {
                 Iv: '[❗] Link yang anda kirim tidak valid!'
             }
         }
-        const apiKey = 'API-KEY' // chat kang jual apikey Mankbarbar :v
+        const apiKey = 'API-KEY' // chat kang jual apikey TN RAR :v
         const time = moment(t * 1000).format('DD/MM HH:mm:ss')
         const botNumber = await client.getHostNumber()
         const blockNumber = await client.getBlockedIds()
@@ -168,15 +172,15 @@ module.exports = msgHandler = async (client, message) => {
             }
             break
 	    case '!stickernobg':
-        case '!stikernobg':
+        case '!nobg':
 	    if (isMedia) {
                 try {
                     var mediaData = await decryptMedia(message, uaOverride)
                     var imageBase64 = `data:${mimetype};base64,${mediaData.toString('base64')}`
                     var base64img = imageBase64
                     var outFile = './media/img/noBg.png'
-                    // untuk api key kalian bisa dapatkan pada website remove.bg
-                    var result = await removeBackgroundFromImageBase64({ base64img, apiKey: '5AcfcuTxWqosPSMgfKz5YYZH', size: 'auto', type: 'auto', outFile })
+                    // untuk api key ambil di web remove.bg
+                    var result = await removeBackgroundFromImageBase64({ base64img, apiKey: 'API-KEY', size: 'auto', type: 'auto', outFile })
                     await fs.writeFile(outFile, result.base64img)
                     await client.sendImageAsSticker(from, `data:${mimetype};base64,${result.base64img}`)
                 } catch(err) {
@@ -195,7 +199,7 @@ module.exports = msgHandler = async (client, message) => {
         case '!donate':
             client.sendLinkWithAutoPreview(from, 'https://saweria.co/donate/helixa', donate)
             break	 
-		case '!play'://silahkan jika ada yang ingin diubah
+		case '!play'://silahkan jika ingin diubah
 		    if (!quotedMsg)
             if (args.length == 0) return client.reply(from, `Untuk mencari lagu dari youtube\n\nPenggunaan: $!play judul lagu`, id)
             axios.get(`https://arugaytdl.herokuapp.com/search?q=${body.slice(6)}`)
@@ -230,7 +234,7 @@ module.exports = msgHandler = async (client, message) => {
             const ttsAr = require('node-gtts')('ar')
             const dataText = body.slice(8)
             if (dataText === '') return client.reply(from, '???', id)
-            if (dataText.length > 500) return client.reply(from, 'kepanjangan tod!', id)
+            if (dataText.length > 500) return client.reply(from, 'kepanjangan bor!', id)
             var dataBhs = body.slice(5, 7)
 	        if (dataBhs == 'id') {
                 ttsId.save('./media/tts/resId.mp3', dataText, function () {
@@ -280,28 +284,28 @@ module.exports = msgHandler = async (client, message) => {
             if (!isGroupMsg) return client.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
             const when = args.join(' ')
             const ans = kapankah[Math.floor(Math.random() * (kapankah.length))]
-            if (!when) client.reply(from, '⚠️ Format salah! Ketik *!help* untuk penggunaan.')
+            if (!when) client.reply(from, 'UPSS Format salah! Ketik *!help* untuk penggunaan.')
             await client.sendText(from, `Pertanyaan: *${when}* \n\nJawaban: ${ans}`)
             break	
         case 'rate':
             if (!isGroupMsg) return client.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
             const rating = args.join(' ')
             const awr = rate[Math.floor(Math.random() * (rate.length))]
-            if (!rating) client.reply(from, '⚠️ Format salah! Ketik *!help* untuk penggunaan.')
+            if (!rating) client.reply(from, 'UPSS Format salah! Ketik *!help* untuk penggunaan.')
             await client.sendText(from, `Pertanyaan: *${rating}* \n\nJawaban: ${awr}`)
             break
         case 'apakah':
             if (!isGroupMsg) return client.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
             const nanya = args.join(' ')
             const jawab = apakah[Math.floor(Math.random() * (apakah.length))]
-            if (!nanya) client.reply(from, '⚠️ Format salah! Ketik *!help* untuk penggunaan.')
+            if (!nanya) client.reply(from, 'UPSS Format salah! Ketik *!help* untuk penggunaan.')
             await client.sendText(from, `Pertanyaan: *${nanya}* \n\nJawaban: ${jawab}`)
             break
          case 'bisakah':
             if (!isGroupMsg) return client.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
             const bsk = args.join(' ')
             const jbsk = bisakah[Math.floor(Math.random() * (bisakah.length))]
-            if (!bsk) client.reply(from, '⚠️ Format salah! Ketik *!help* untuk penggunaan.')
+            if (!bsk) client.reply(from, 'UPSS Format salah! Ketik *!help* untuk penggunaan.')
             await client.sendText(from, `Pertanyaan: *${bsk}* \n\nJawaban: ${jbsk}`)
             break
 		case '!koin':
@@ -322,7 +326,7 @@ module.exports = msgHandler = async (client, message) => {
             if (args.length === 1) return client.reply(from, 'Kirim perintah *!nulis [teks]*', id)
             const nulis = encodeURIComponent(body.slice(7))
             client.reply(from, mess.wait, id)
-            let urlnulis = `https://mhankbarbar.herokuapp.com/nulis?text=${nulis}&apiKey=${apiKey}`
+            let urlnulis = `https://vlaxrar.herokuapp.com/nulis?text=${nulis}&apiKey=${apiKey}`
             await fetch(urlnulis, {method: "GET"})
             .then(res => res.json())
             .then(async (json) => {
@@ -335,7 +339,7 @@ module.exports = msgHandler = async (client, message) => {
             if (!isLinks) return client.reply(from, mess.error.Iv, id)
             try {
                 client.reply(from, mess.wait, id)
-                const resp = await get.get(`https://mhankbarbar.herokuapp.com/api/yta?url=${args[1]}&apiKey=${apiKey}`).json()
+                const resp = await get.get(`https://vlaxrar.herokuapp.com/api/yta?url=${args[1]}&apiKey=${apiKey}`).json()
                 if (resp.error) {
                     client.reply(from, resp.error, id)
                 } else {
@@ -356,7 +360,7 @@ module.exports = msgHandler = async (client, message) => {
             if (!isLin) return client.reply(from, mess.error.Iv, id)
             try {
                 client.reply(from, mess.wait, id)
-                const ytv = await get.get(`https://mhankbarbar.herokuapp.com/api/ytv?url=${args[1]}&apiKey=${apiKey}`).json()
+                const ytv = await get.get(`https://vlaxrar.herokuapp.com/api/ytv?url=${args[1]}&apiKey=${apiKey}`).json()
                 if (ytv.error) {
                     client.reply(from, ytv.error, id)
                 } else {
@@ -372,7 +376,7 @@ module.exports = msgHandler = async (client, message) => {
         case '!wiki':
             if (args.length === 1) return client.reply(from, 'Kirim perintah *!wiki [query]*\nContoh : *!wiki asu*', id)
             const query_ = body.slice(6)
-            const wiki = await get.get(`https://mhankbarbar.herokuapp.com/api/wiki?q=${query_}&lang=id&apiKey=${apiKey}`).json()
+            const wiki = await get.get(`https://vlaxrar.herokuapp.com/api/wiki?q=${query_}&lang=id&apiKey=${apiKey}`).json()
             if (wiki.error) {
                 client.reply(from, wiki.error, id)
             } else {
@@ -382,7 +386,7 @@ module.exports = msgHandler = async (client, message) => {
         case '!cuaca':
             if (args.length === 1) return client.reply(from, 'Kirim perintah *!cuaca [tempat]*\nContoh : *!cuaca tangerang', id)
             const tempat = body.slice(7)
-            const weather = await get.get(`https://mhankbarbar.herokuapp.com/api/cuaca?q=${tempat}&apiKey=${apiKey}`).json()
+            const weather = await get.get(`https://vlaxrar.herokuapp.com/api/cuaca?q=${tempat}&apiKey=${apiKey}`).json()
             if (weather.error) {
                 client.reply(from, weather.error, id)
             } else {
@@ -393,7 +397,7 @@ module.exports = msgHandler = async (client, message) => {
             if (args.length === 1) return client.reply(from, 'Kirim perintah *!fb [linkFb]* untuk contoh silahkan kirim perintah *!readme*', id)
             if (!args[1].includes('facebook.com')) return client.reply(from, mess.error.Iv, id)
             client.reply(from, mess.wait, id)
-            const epbe = await get.get(`https://mhankbarbar.herokuapp.com/api/epbe?url=${args[1]}&apiKey=${apiKey}`).json()
+            const epbe = await get.get(`https://vlaxrar.herokuapp.com/api/epbe?url=${args[1]}&apiKey=${apiKey}`).json()
             if (epbe.error) return client.reply(from, epbe.error, id)
             client.sendFileFromUrl(from, epbe.result, 'epbe.mp4', epbe.title, id)
             break
@@ -401,7 +405,7 @@ module.exports = msgHandler = async (client, message) => {
             if (!isGroupMsg) return client.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
             if (args.length === 1) return client.reply(from, 'Kirim perintah *!shorturl [linkWeb]*\nContoh : *!shorturl https://neonime.vip*', id)
             const sorturl = body.slice(10)
-            const surl = await axios.get('https://tobz-api.herokuapp.com/api/shorturl?url=' + sorturl)
+            const surl = await axios.get('https://vlaxrar.herokuapp.com/api/shorturl?url=' + sorturl)
             const surll = surl.data
             if (surll.error) return client.reply(from, ssww.error, id)
             const surl2 = `Link : ${sorturl}\nShort URL : ${surll.result}`
@@ -424,7 +428,7 @@ module.exports = msgHandler = async (client, message) => {
             if (!isGroupMsg) return client.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
             client.reply(from, mess.wait, id)
             const googleQuery = body.slice(8)
-            if(googleQuery == undefined || googleQuery == ' ') return tobz.reply(from, `*Hasil Pencarian : ${googleQuery}* tidak ditemukan`, id)
+            if(googleQuery == undefined || googleQuery == ' ') return client.reply(from, `*Hasil Pencarian : ${googleQuery}* tidak ditemukan`, id)
             google({ 'query': googleQuery }).then(results => {
             let vars = `_*Hasil Pencarian : ${googleQuery}*_\n`
             for (let i = 0; i < results.length; i++) {
@@ -618,7 +622,7 @@ module.exports = msgHandler = async (client, message) => {
 				client.reply(from, 'Maaf, Belum ada yang membaca pesan')
             }
             break	
-		case '!setgroupname':
+		case '!setgcname':
             if (!isGroupMsg) return client.reply(from, `??`, id)
             if (!isGroupAdmins) return client.reply(from, `bukan admin jangan sok keras :v`, id)
             if (!isBotGroupAdmins) return client.reply(from, `Fitur ini hanya bisa di gunakan ketika bot menjadi admin`, id)
@@ -633,7 +637,7 @@ module.exports = msgHandler = async (client, message) => {
             if (!isOwner) return client.reply(from, `Perintah ini hanya bisa di gunakan oleh Owner Flin Sky!`, id)
             const setnem = body.slice(9)
             await client.setMyName(setnem)
-            client.sendTextWithMentions(from, `Makasih Tuan Nama Barunya @${sender.id.replace('@c.us','')} 😃`, id)
+            client.sendTextWithMentions(from, `Makasih Nama Barunya @${sender.id.replace('@c.us','')} :)`, id)
             break
 		case '!cgc':
             if (!isOwner) return client.reply(from, 'Perintah ini hanya bisa digunakan oleh Owner', id)
@@ -676,21 +680,21 @@ module.exports = msgHandler = async (client, message) => {
             break	
         case '!igstalk':
             if (args.length === 1)  return client.reply(from, 'Kirim perintah *!igStalk @username*\nConntoh *!igStalk @duar_amjay*', id)
-            const stalk = await get.get(`https://mhankbarbar.herokuapp.com/api/stalk?username=${args[1]}&apiKey=${apiKey}`).json()
+            const stalk = await get.get(`https://vlaxrar.herokuapp.com/api/stalk?username=${args[1]}&apiKey=${apiKey}`).json()
             if (stalk.error) return client.reply(from, stalk.error, id)
             const { Biodata, Jumlah_Followers, Jumlah_Following, Jumlah_Post, Name, Username, Profile_pic } = stalk
             const caps = `➸ *Nama* : ${Name}\n➸ *Username* : ${Username}\n➸ *Jumlah Followers* : ${Jumlah_Followers}\n➸ *Jumlah Following* : ${Jumlah_Following}\n➸ *Jumlah Postingan* : ${Jumlah_Post}\n➸ *Biodata* : ${Biodata}`
             await client.sendFileFromUrl(from, Profile_pic, 'Profile.jpg', caps, id)
             break
         case '!infogempa':
-            const bmkg = await get.get(`https://mhankbarbar.herokuapp.com/api/infogempa?apiKey=${apiKey}`).json()
+            const bmkg = await get.get(`https://vlaxrar.herokuapp.com/api/infogempa?apiKey=${apiKey}`).json()
             const { potensi, koordinat, lokasi, kedalaman, magnitude, waktu, map } = bmkg
             const hasil = `*${waktu}*\n📍 *Lokasi* : *${lokasi}*\n〽️ *Kedalaman* : *${kedalaman}*\n💢 *Magnitude* : *${magnitude}*\n🔘 *Potensi* : *${potensi}*\n📍 *Koordinat* : *${koordinat}*`
             client.sendFileFromUrl(from, map, 'shakemap.jpg', hasil, id)
             break
         case '!anime':
             if (args.length === 1) return client.reply(from, 'Kirim perintah *!anime [query]*\nContoh : *!anime darling in the franxx*', id)
-            const animek = await get.get(`https://mhankbarbar.herokuapp.com/api/kuso?q=${body.slice(7)}&apiKey=${apiKey}`).json()
+            const animek = await get.get(`https://vlaxrar.herokuapp.com/api/kuso?q=${body.slice(7)}&apiKey=${apiKey}`).json()
             if (animek.error) return client.reply(from, animek.error, id)
             const res_animek = `Title: *${animek.title}*\n\n${animek.info}\n\nSinopsis: ${animek.sinopsis}\n\nLink Download:\n${animek.link_dl}`
             client.sendFileFromUrl(from, animek.thumb, 'kusonime.jpg', res_animek, id)
@@ -796,7 +800,7 @@ module.exports = msgHandler = async (client, message) => {
                     client.reply(from, 'Error !', id)
                 })
             } else {
-                client.sendFile(from, './media/img/tutod.jpg', 'Tutor.jpg', 'Neh contoh mhank!', id)
+                client.sendFile(from, './media/img/tutor.jpg', 'Tutor.jpg', 'Neh contoh mhank!', id)
             }
             break
         case '!quotemaker':
@@ -835,7 +839,7 @@ module.exports = msgHandler = async (client, message) => {
         case '!bc':
             if (!isOwner) return client.reply(from, `Perintah ini hanya untuk Owner Flin Sky`, id)
                 bctxt = body.slice(4)
-                txtbc = `*「 FLIN SKY BROADCAST 」*\n\n${bctxt}`
+                txtbc = `*「 SXR BOT 」*\n\n${bctxt}`
                 const semuagrup = await client.getAllChatIds();
                 if(quotedMsg && quotedMsg.type == 'image'){
                     const mediaData = await decryptMedia(quotedMsg)
@@ -875,7 +879,7 @@ module.exports = msgHandler = async (client, message) => {
                 hehe += '╠➥'
                 hehe += ` @${groupMem[i].id.replace(/@c.us/g, '')}\n`
             }
-            hehe += '╚═〘 FLIN SKY BOT 〙'
+            hehe += '╚═〘 SXR BOT 〙'
             await client.sendTextWithMentions(from, hehe)
             break
         case '!kickall':
@@ -937,7 +941,7 @@ module.exports = msgHandler = async (client, message) => {
         case '!leave':
             if (!isGroupMsg) return client.reply(from, 'Perintah ini hanya bisa di gunakan dalam group', id)
             if (!isGroupAdmins) return client.reply(from, 'Perintah ini hanya bisa di gunakan oleh admin group', id)
-            await client.sendText(from,'bay ajg').then(() => client.leaveGroup(groupId))
+            await client.sendText(from,'bay awas invite gw lagi).then(() => client.leaveGroup(groupId))
             break
         case '!promote':
             if (!isGroupMsg) return client.reply(from, 'Fitur ini hanya bisa di gunakan dalam group', id)
@@ -947,7 +951,7 @@ module.exports = msgHandler = async (client, message) => {
             if (mentionedJidList.length >= 2) return client.reply(from, 'Maaf, perintah ini hanya dapat digunakan kepada 1 user.', id)
             if (groupAdmins.includes(mentionedJidList[0])) return client.reply(from, 'Maaf, user tersebut sudah menjadi admin.', id)
             await client.promoteParticipant(groupId, mentionedJidList[0])
-            await client.sendTextWithMentions(from, `menambahkan @${mentionedJidList[0]} sebagai admin selamat tod :v.`)
+            await client.sendTextWithMentions(from, `menambahkan @${mentionedJidList[0]} selamat admin baru Jan sok  keras ok.`)
             break
         case '!demote':
             if (!isGroupMsg) return client.reply(from, 'Fitur ini hanya bisa di gunakan dalam group', id)
@@ -957,21 +961,21 @@ module.exports = msgHandler = async (client, message) => {
             if (mentionedJidList.length >= 2) return client.reply(from, 'Maaf, perintah ini hanya dapat digunakan kepada 1 orang.', id)
             if (!groupAdmins.includes(mentionedJidList[0])) return client.reply(from, 'Maaf, user tersebut tidak menjadi admin.', id)
             await client.demoteParticipant(groupId, mentionedJidList[0])
-            await client.sendTextWithMentions(from, `menghapus jabatan @${mentionedJidList[0]} sory tod di suruh admin bgst :v.`)
+            await client.sendTextWithMentions(from, `menghapus jabatan @${mentionedJidList[0]} soryy.`)
             break
         case '!join':
             //return client.reply(from, 'Jika ingin meng-invite bot ke group anda, silahkan izin ke wa.me/6285892766102', id)
-            if (args.length < 2) return client.reply(from, 'Kirim perintah *!join linkgroup kunci*\n\nEx:\n!join https://chat.whatsapp.com/blablablablablabla abcde\nuntuk kunci kamu bisa mendapatkannya hanya dengan chat owner ketik !owner', id)
+            if (args.length < 2) return client.reply(from, 'Kirim perintah *!join linkgroup*\n\nEx:\n!join https://chat.whatsapp.com/', id)
             const link = args[1]
             const key = args[2]
             const tGr = await client.getAllGroups()
-            const minMem = 100
+            const minMem = 256
             const isLink = link.match(/(https:\/\/chat.whatsapp.com)/gi)
-            if (key !== '120203') return client.reply(from, '*kunci* salah! silahkan chat owner bot unruk mendapatkan key yang valid', id)
+            if (key !== 'vxlar012021') return client.reply(from, '*kunci* invite bot? Donasi min 5k minat hubungi owner', id)
             const check = await client.inviteInfo(link)
-            if (!isLink) return client.reply(from, 'Ini link? 👊🤬', id)
+            if (!isLink) return client.reply(from, 'yg bener bor link nya 🤬', id)
             if (tGr.length > 5) return client.reply(from, 'Maaf jumlah group sudah maksimal!', id)
-            if (check.size < minMem) return client.reply(from, 'Member group tidak melebihi 100, bot tidak bisa masuk', id)
+            if (check.size < minMem) return client.reply(from, 'Member group tidak melebihi 255, bot tidak akan masuk', id)
             if (check.status === 200) {
                 await client.joinGroupViaLink(link).then(() => client.reply(from, 'Done!'))
             } else {
@@ -995,7 +999,7 @@ module.exports = msgHandler = async (client, message) => {
             client.reply(from, `Change Prefix To ${pf} SUCCESS!`, id)
             break		
         case '!getses':
-		    if (!isOwner) return client.reply(from, 'gak usah kepo tod cuma owner yg bisa', id)
+		    if (!isOwner) return client.reply(from, 'upss anda kepo', id)
             const sesPic = await client.getSnapshot()
             client.sendFile(from, sesPic, 'session.png','nih bos!!', id)
             break
@@ -1008,7 +1012,7 @@ module.exports = msgHandler = async (client, message) => {
         case '!chord':
             if (args.length === 1) return client.reply(from, 'Kirim perintah *!chord [query]*, contoh *!chord aku bukan boneka*', id)
             const query__ = body.slice(7)
-            const chord = await get.get(`https://mhankbarbar.herokuapp.com/api/chord?q=${query__}&apiKey=${apiKey}`).json()
+            const chord = await get.get(`https://vlaxrar.herokuapp.com/api/chord?q=${query__}&apiKey=${apiKey}`).json()
             if (chord.error) return client.reply(from, chord.error, id)
             client.reply(from, chord.result, id)
             break
@@ -1026,7 +1030,7 @@ module.exports = msgHandler = async (client, message) => {
         case '!jadwalshalat':
             if (args.length === 1) return client.reply(from, '[❗] Kirim perintah *!jadwalShalat [daerah]*\ncontoh : *!jadwalShalat Tangerang*\nUntuk list daerah kirim perintah *!listDaerah*')
             const daerah = body.slice(14)
-            const jadwalShalat = await get.get(`https://mhankbarbar.herokuapp.com/api/jadwalshalat?daerah=${daerah}&apiKey=${apiKey}`).json()
+            const jadwalShalat = await get.get('https://vlaxrar.herokuapp.com/api/jadwalshalat?daerah=${daerah}&apiKey=${apiKey}`).json()
             if (jadwalShalat.error) return client.reply(from, jadwalShalat.error, id)
             const { Imsyak, Subuh, Dhuha, Dzuhur, Ashar, Maghrib, Isya } = await jadwalShalat
             arrbulan = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
@@ -1050,7 +1054,7 @@ module.exports = msgHandler = async (client, message) => {
             client.reply(from, `Jam : ${jadwalNow.jam}\n\nJadwalTV : ${jadwalNow.jadwalTV}`, id)
             break
         case '!loli':
-            const loli = await get.get('https://mhankbarbars.herokuapp.com/api/randomloli').json()
+            const loli = await get.get('https://vlaxrar.herokuapp.com/api/randomloli').json()
             client.sendFileFromUrl(from, loli.result, 'loli.jpeg', '*L O L I*', id)
             break
         case '!waifu':
@@ -1105,7 +1109,7 @@ module.exports = msgHandler = async (client, message) => {
             }
             break
         case '!randomnekonime':
-            const nekonime = await get.get('https://mhankbarbar.herokuapp.com/api/nekonime').json()
+            const nekonime = await get.get('https://vlaxrar.herokuapp.com/api/nekonime').json()
             if (nekonime.result.endsWith('.png')) {
                 var ext = '.png'
             } else {
@@ -1154,11 +1158,11 @@ module.exports = msgHandler = async (client, message) => {
             break
         case '!quote':
         case '!quotes':
-            const quotes = await get.get('https://mhankbarbars.herokuapp.com/api/randomquotes').json()
+            const quotes = await get.get('https://vlaxrar.herokuapp.com/api/randomquotes').json()
             client.reply(from, `➸ *Quotes* : ${quotes.quotes}\n➸ *Author* : ${quotes.author}`, id)
             break
         case '!quotesnime':
-            const skya = await get.get('https://mhankbarbars.herokuapp.com/api/quotesnime/random').json()
+            const skya = await get.get('https://vlaxrar.herokuapp.com/api/quotesnime/random').json()
             skya_ = skya.data
             client.reply(from, `➸ *Quotes* : ${skya_.quote}\n➸ *Character* : ${skya_.character}\n➸ *Anime* : ${skya_.anime}`, id)
             break
@@ -1174,7 +1178,7 @@ module.exports = msgHandler = async (client, message) => {
             client.reply(from, readme, id)
             break
         case '!info':
-            client.sendLinkWithAutoPreview(from, 'https://github.com/FlinSky/whatsapp-bot', info)
+            client.sendLinkWithAutoPreview(from, 'https://github.com/FlinSkyReal/rar-whatsapp', info)
             break
         case '!snk':
             client.reply(from, snk, id)
