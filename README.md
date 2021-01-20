@@ -2,6 +2,9 @@
 <img src="https://i.pinimg.com/originals/a9/61/56/a9615697d8cd1dee05b0ba8a9f1ea9a5.gif?s=400&u=1ceaf43bd7e0fdb53563faf97ca77e275936168d&v=4" width="128" height="128"/>
 </p>
 <p align="center">
+<a href="https://www.codefactor.io/repository/github/FlinSkyReal/rar-rey-whatsapp/overview/master"><img title="Rating" src="https://www.codefactor.io/repository/github/FlinSkyReal/rar-rey-whatsapp/badge/master"></a>
+</p>
+<p align="center">
 <a href="#"><img title="Rarxrey BOT" src="https://img.shields.io/badge/Rarxrey BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
