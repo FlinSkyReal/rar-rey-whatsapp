@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://i.pinimg.com/originals/a9/61/56/a9615697d8cd1dee05b0ba8a9f1ea9a5.gif?s=400&u=1ceaf43bd7e0fdb53563faf97ca77e275936168d&v=4" width="128" height="128"/>
+<img src="https://avatars.githubusercontent.com/u/76969354?s=400&u=30eae39685f8367881399e0be81e8b43ad1a38b8&v=4" width="128" height="128"/>
 </p>
 <p align="center">
 <a href="#"><img title="Rarxrey BOT" src="https://img.shields.io/badge/Rarxrey BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
